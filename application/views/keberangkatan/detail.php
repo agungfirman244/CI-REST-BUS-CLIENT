@@ -7,15 +7,36 @@
                     Detail Data Jadwal Keberangkatan
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title"><?= $keberangkatan['id_keberangkatan']; ?></h5>
-                    <h6 class="card-subtitle mb-2 text-muted"><?= $keberangkatan['id_bus']; ?></h6>
-                    <p class="card-text"><?= $keberangkatan['tujuan']; ?></p>
-                    <p class="card-text"><?= $keberangkatan['tanggal_keberangkatan']; ?></p>
-                    <p class="card-text"><?= $keberangkatan['jam_keberangkatan']; ?></p>
-                    <p class="card-text"><?= $keberangkatan['rute_awal']; ?></p>
-                    <p class="card-text"><?= $keberangkatan['rute_tujuan']; ?></p>
-                    <p class="card-text"><?= $keberangkatan['harga']; ?></p>
-
+                <table class="table table-hover">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Tanggal Keberangkatan</th>
+                                <td>:</td>
+                                <td><?= $keberangkatan['tanggal_keberangkatan']; ?></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Jam Keberangkatan</th>
+                                <td>:</td>
+                                <td><?= $keberangkatan['jam_keberangkatan']; ?></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Rute Awal</th>
+                                <td>:</td>
+                                <td><?= $keberangkatan['rute_awal']; ?></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Rute Tujuan</th>
+                                <td>:</td>
+                                <td><?= $keberangkatan['rute_tujuan']; ?></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Harga</th>
+                                <td>:</td>
+                                <td><?= $keberangkatan['harga']; ?></td>
+                            </tr>
+                                                
+                        </tbody>
+                    </table>
                     <a href="<?= base_url(); ?>keberangkatan" class="btn btn-primary">Kembali</a>
                 </div>
             </div>

@@ -29,7 +29,7 @@
             <ul class="list-group">
                 <?php foreach ($kursi as $ks) : ?>
                 <li class="list-group-item">
-                    <?= $ks['urutan']; ?>
+                <?= $ks['kode_kursi']; ?> <td>:</td> <?= $ks['urutan']; ?>
                     <a href="<?= base_url(); ?>kursi/hapus/<?= $ks['id_kursi']; ?>"
                         class="badge badge-danger float-right tombol-hapus">hapus</a>
                     <a href="<?= base_url(); ?>kursi/ubah/<?= $ks['id_kursi']; ?>"

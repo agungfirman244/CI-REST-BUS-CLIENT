@@ -7,10 +7,31 @@
                     Detail Data Bus
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title"><?= $bus['no_polis']; ?></h5>
-                    <h6 class="card-subtitle mb-2 text-muted"><?= $bus['kelas']; ?></h6>
-                    <p class="card-text"><?= $bus['nama_supir']; ?></p>
-                    <p class="card-text"><?= $bus['nama_kenek']; ?></p>
+                <table class="table table-hover">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Nomor Polisi</th>
+                                <td>:</td>
+                                <td><?= $bus['no_polis'] ?></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Kelas Layanan Bus</th>
+                                <td>:</td>
+                                <td><?= $bus['kelas'] ?></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Nama Supir Bus</th>
+                                <td>:</td>
+                                <td><?= $bus['nama_supir'] ?></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Nama Kenek Bus</th>
+                                <td>:</td>
+                                <td><?= $bus['nama_kenek'] ?></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
                     <a href="<?= base_url(); ?>bus" class="btn btn-primary">Kembali</a>
                 </div>
             </div>

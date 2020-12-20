@@ -7,8 +7,20 @@
                     Detail Data Kursi
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title"><?= $kursi['kode_kursi']; ?></h5>
-                    <h6 class="card-subtitle mb-2 text-muted"><?= $kursi['urutan']; ?></h6>
+                <table class="table table-hover">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Kode Kursi</th>
+                                <td>:</td>
+                                <td><?= $kursi['kode_kursi'] ?></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Urutan Kursi</th>
+                                <td>:</td>
+                                <td><?= $kursi['urutan'] ?></td>
+                            </tr>                          
+                        </tbody>
+                    </table>
                     <a href="<?= base_url(); ?>kursi" class="btn btn-primary">Kembali</a>
                 </div>
             </div>

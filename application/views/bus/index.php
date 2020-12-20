@@ -29,7 +29,7 @@
             <ul class="list-group">
                 <?php foreach ($bus as $bs) : ?>
                 <li class="list-group-item">
-                    <?= $bs['no_polis']; ?>
+                <?= $bs['no_polis']; ?> <td>:</td> <?= $bs['kelas']; ?>
                     <a href="<?= base_url(); ?>bus/hapus/<?= $bs['id_bus']; ?>"
                         class="badge badge-danger float-right tombol-hapus">hapus</a>
                     <a href="<?= base_url(); ?>bus/ubah/<?=$bs['id_bus']; ?>"

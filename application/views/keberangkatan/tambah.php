@@ -32,10 +32,12 @@
                         <div class="form-group">
                             <label for="tanggal_keberangkatan">Tanggal Keberangkatan</label>
                             <input type="date" name="tanggal_keberangkatan" class="form-control" id="tanggal_keberangkatan">
+                           
                         </div>
                         <div class="form-group">
                             <label for="jam_keberangkatan">Jam Keberangkatan</label>
                             <input type="time" name="jam_keberangkatan" class="form-control" id="jam_keberangkatan">
+                           
                         </div>
 
                         

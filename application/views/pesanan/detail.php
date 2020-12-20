@@ -7,11 +7,30 @@
                     Detail Data Pesanan
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title"><?= $pesanan['id_pesan']; ?></h5>
-                    <h6 class="card-subtitle mb-2 text-muted"><?= $pesanan['nama']; ?></h6>
-                    <p class="card-text"><?= $pesanan['alamat']; ?></p>
-                    <p class="card-text"><?= $pesanan['no_hp']; ?></p>
-                    <p class="card-text"><?= $pesanan['tanggal_pesan']; ?></p>
+                <table class="table table-hover">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Nama</th>
+                                <td>:</td>
+                                <td><?= $pesanan['nama'] ?></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Alamat</th>
+                                <td>:</td>
+                                <td><?= $pesanan['alamat'] ?></td>
+                            </tr>    
+                            <tr>
+                                <th scope="row">No Hp</th>
+                                <td>:</td>
+                                <td><?= $pesanan['no_hp'] ?></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tanggal Pemesanan</th>
+                                <td>:</td>
+                                <td><?= $pesanan['tanggal_pesan'] ?></td>
+                            </tr>                         
+                        </tbody>
+                    </table>
                     <a href="<?= base_url(); ?>pesanan" class="btn btn-primary">Kembali</a>
                 </div>
             </div>

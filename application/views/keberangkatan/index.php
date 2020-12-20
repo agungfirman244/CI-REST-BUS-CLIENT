@@ -29,7 +29,7 @@
             <ul class="list-group">
                 <?php foreach ($keberangkatan as $kbk) : ?>
                 <li class="list-group-item">
-                    <?= $kbk['tanggal_keberangkatan']; ?>
+                <?= $kbk['tanggal_keberangkatan']; ?> <td>:</td> <?= $kbk['tujuan']; ?> 
                     <a href="<?= base_url(); ?>keberangkatan/hapus/<?= $kbk['id_keberangkatan']; ?>"
                         class="badge badge-danger float-right tombol-hapus">hapus</a>
                         <a href="<?= base_url(); ?>keberangkatan/ubah/<?= $kbk['id_keberangkatan']; ?>"

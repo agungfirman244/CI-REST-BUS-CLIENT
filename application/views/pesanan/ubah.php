@@ -10,10 +10,17 @@
                 <div class="card-body">
                     <form action="" method="post">
                         <input type="hidden" name="id_pesan" value="<?= $pesanan['id_pesan']; ?>">
-                        <input type="hidden" name="id_keberangkatan" value="<?= $pesanan['id_keberangkatan']; ?>">
-                        <input type="hidden" name="id_kursi" value="<?= $pesanan['id_kursi']; ?>">
                         
-                 
+                        <div class="form-group">
+                            <label for="id_keberangkatan">Id Keberangkatan</label>
+                            <input type="text" name="id_keberangkatan" class="form-control" id="id_keberangkatan" value="<?= $pesanan['id_keberangkatan']; ?>">
+                            <small class="form-text text-danger"><?= form_error('id_keberangkatan'); ?></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="id_kursi">Id Kursi</label>
+                            <input type="text" name="id_kursi" class="form-control" id="id_kursi" value="<?= $pesanan['id_kursi']; ?>">
+                            <small class="form-text text-danger"><?= form_error('id_kursi'); ?></small>
+                        </div>
                         <div class="form-group">
                             <label for="nama">Nama</label>
                             <input type="text" name="nama" class="form-control" id="nama" value="<?= $pesanan['nama']; ?>">
